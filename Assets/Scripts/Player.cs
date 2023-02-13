@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
         
     private void Update()
     {
-        Run();
+        RunHorizontal();
+        RunVertical();
         FlipSprite();
     }
 
@@ -26,13 +27,20 @@ public class Player : MonoBehaviour
         moveInput = inputValue.Get<Vector2>();        
     }
 
-    private void Run()
+    private void RunHorizontal()
     {
-        Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, rigidbody2D.velocity.y);
-        rigidbody2D.velocity = playerVelocity;
+        Vector2 horizontalVelocity = new Vector2(moveInput.x * runSpeed, rigidbody2D.velocity.y);
+        rigidbody2D.velocity = horizontalVelocity;
 
         bool playerHasHorizintalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Mathf.Epsilon;
-        animator.SetBool("isRunning", playerHasHorizintalSpeed);
+        animator.SetBool("isRunning", playerHasHorizintalSpeed);        
+    }
+
+    private void RunVertical()
+    {
+        Vector2 verticalVelocity = new Vector2(rigidbody2D.velocity.x, moveInput.y * runSpeed);
+        rigidbody2D.velocity = verticalVelocity;
+        rigidbody2D.gravityScale = 0f;
     }
 
     private void FlipSprite()
