@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     {
         RunHorizontal();
         RunVertical();
-        FlipSprite();
+        FlipSprite();        
     }
 
     private void OnMove(InputValue inputValue)

@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: ea06e3cc2bb95cd4d8bf517d69fd0eb9
+guid: d846abb0336da004fbf063a0e91aeaea
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2438307069932402953
+    second: Crab_Run_0
+  - first:
+      213: 5241994141584075851
+    second: Crab_Run_1
+  - first:
+      213: 7557213267795395730
+    second: Crab_Run_2
+  - first:
+      213: 6353432577325987440
+    second: Crab_Run_3
+  - first:
+      213: 6264126686478269255
+    second: Crab_Run_4
+  - first:
+      213: -2540641399431316647
+    second: Crab_Run_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -33,7 +51,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,14 +81,14 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +100,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,11 +108,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,7 +124,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +159,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPA_Enemy_Right_0
+      name: Crab_Run_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 7
-        width: 32
-        height: 31
+        x: 19
+        y: 80
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 351fadd5db8f15f4f865880d73f54281
-      internalID: -1317176034
+      spriteID: 909f4a48c5b96d120800000000000000
+      internalID: 2438307069932402953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_1
+      name: Crab_Run_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 7
-        width: 32
-        height: 31
+        x: 83
+        y: 80
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6608d58da6143bd449a71306d973fac8
-      internalID: 29122301
+      spriteID: b4c2cc306ed4fb840800000000000000
+      internalID: 5241994141584075851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_2
+      name: Crab_Run_2
       rect:
         serializedVersion: 2
-        x: 86
-        y: 7
-        width: 32
-        height: 31
+        x: 147
+        y: 80
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c290a215638461d4dbe3d3fafba42540
-      internalID: 1971544332
+      spriteID: 29440de5d6d90e860800000000000000
+      internalID: 7557213267795395730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_3
+      name: Crab_Run_3
       rect:
         serializedVersion: 2
-        x: 124
-        y: 7
-        width: 32
-        height: 31
+        x: 212
+        y: 80
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db92a96a444a3b946b41e37c96634422
-      internalID: 1916387754
+      spriteID: 076f8e3644deb2850800000000000000
+      internalID: 6353432577325987440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_4
+      name: Crab_Run_4
       rect:
         serializedVersion: 2
-        x: 162
-        y: 7
-        width: 32
-        height: 31
+        x: 19
+        y: 16
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbedc29ce81c1c64b9b4036077f49f2f
-      internalID: 1119602554
+      spriteID: 74bf4975806aee650800000000000000
+      internalID: 6264126686478269255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_5
+      name: Crab_Run_5
       rect:
         serializedVersion: 2
-        x: 200
-        y: 7
-        width: 32
-        height: 31
+        x: 83
+        y: 16
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6881efb42d9962d40b61eb782ea132de
-      internalID: 1047644878
+      spriteID: 95bbe3dab14ddbcd0800000000000000
+      internalID: -2540641399431316647
       vertices: []
       indices: 
       edges: []
@@ -253,12 +295,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPA_Enemy_Right_5: 1047644878
-      SPA_Enemy_Right_0: -1317176034
-      SPA_Enemy_Right_4: 1119602554
-      SPA_Enemy_Right_3: 1916387754
-      SPA_Enemy_Right_2: 1971544332
-      SPA_Enemy_Right_1: 29122301
+      Crab_Run_3: 6353432577325987440
+      Crab_Run_2: 7557213267795395730
+      Crab_Run_1: 5241994141584075851
+      Crab_Run_4: 6264126686478269255
+      Crab_Run_0: 2438307069932402953
+      Crab_Run_5: -2540641399431316647
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
