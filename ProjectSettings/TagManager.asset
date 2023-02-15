@@ -16,7 +16,7 @@ TagManager:
   - Background
   - Enemies
   - Bullets
-  - 
+  - LevelLimit
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3896610511
+    locked: 0
+  - name: LevelLimit
+    uniqueID: 935990413
     locked: 0
   - name: Enemies
     uniqueID: 3396001
