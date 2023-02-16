@@ -9,17 +9,21 @@ public class Player : MonoBehaviour
 
     private Vector2 moveInput;
 
-    private new Rigidbody2D rigidbody2D;
-    private new Collider2D collider2D;
+    private new Rigidbody2D rigidbody2D;    
     private Animator animator;
+    private Shooter shooter;
         
-    bool isAlive = true;
+    private bool isAlive = true;        
+
+    private void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
 
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        collider2D = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();        
     }
         
     private void Update()
@@ -30,17 +34,20 @@ public class Player : MonoBehaviour
         }
         RunHorizontal();
         RunVertical();
-        FlipSprite();
-        Die();
+        FlipSprite();        
+        Fire();
     }
 
-    private void OnFire(InputValue inputValue)
+    private void Fire()
     {
         if (!isAlive)
         {
             return;
-        }
-        Instantiate(bullet, gun.position, transform.rotation);
+        }  
+        if (shooter != null)
+        {
+            shooter.isFiring = true;
+        }        
     }
 
     private void OnMove(InputValue inputValue)
@@ -57,8 +64,8 @@ public class Player : MonoBehaviour
         Vector2 horizontalVelocity = new Vector2(moveInput.x * runSpeed, rigidbody2D.velocity.y);
         rigidbody2D.velocity = horizontalVelocity;
 
-        bool playerHasHorizintalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Mathf.Epsilon;
-        animator.SetBool("isRunning", playerHasHorizintalSpeed);        
+        bool playerHorizontalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Mathf.Epsilon;
+        animator.SetBool("isRunning", playerHorizontalSpeed);        
     }
 
     private void RunVertical()
@@ -70,20 +77,16 @@ public class Player : MonoBehaviour
 
     private void FlipSprite()
     {
-        bool playerHasHorizintalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Mathf.Epsilon;
-
-        if (playerHasHorizintalSpeed)
-        {
+        bool playerHasHorizontalSpeed = Mathf.Abs(rigidbody2D.velocity.x) > Mathf.Epsilon;
+        
+        if (playerHasHorizontalSpeed)
+        {            
             transform.localScale = new Vector2(Mathf.Sign(rigidbody2D.velocity.x), 1f);
         }        
     }
 
-    private void Die()
+    public bool GetAliveState()
     {
-        if (collider2D.IsTouchingLayers(LayerMask.GetMask("Enemies")))
-        {
-            isAlive = false;
-            animator.SetTrigger("Dying");            
-        }
-    }
+        return isAlive = false;
+    }        
 }

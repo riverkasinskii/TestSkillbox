@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4015015738318060424}
   - component: {fileID: 4015015738318060421}
   - component: {fileID: -9112748536351571973}
+  - component: {fileID: -7264907512242300962}
+  - component: {fileID: 1774791082811848363}
   m_Layer: 8
   m_Name: Goober (Enemy)
   m_TagString: Enemy
@@ -120,7 +122,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.042057574, y: -0.13588458}
@@ -171,4 +173,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857c58a513eb35d4b984f2fc5a42b9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 11400000, guid: e892f8155c809fa4592590974b44d74f, type: 2}
+--- !u!114 &-7264907512242300962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4015015738318060431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b1a96f006b4f418b442143ac18bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 40
+  health: 40
+--- !u!114 &1774791082811848363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4015015738318060431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7f6fb6478b9b040b264a1eb65372fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10

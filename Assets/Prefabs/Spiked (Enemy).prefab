@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 330610498084410614}
   - component: {fileID: 330610498084410609}
   - component: {fileID: 792976230031521203}
+  - component: {fileID: -6358138406522145919}
+  - component: {fileID: 8154477673963509612}
   m_Layer: 8
   m_Name: Spiked (Enemy)
   m_TagString: Enemy
@@ -171,4 +173,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857c58a513eb35d4b984f2fc5a42b9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 11400000, guid: ac8a5dd6724174e4d9d099e5d9622d84, type: 2}
+--- !u!114 &-6358138406522145919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330610498084410615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b1a96f006b4f418b442143ac18bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &8154477673963509612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330610498084410615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7f6fb6478b9b040b264a1eb65372fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10

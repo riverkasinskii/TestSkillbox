@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5866667092325961018}
   - component: {fileID: 5866667092325961021}
   - component: {fileID: 528813010506952094}
+  - component: {fileID: -5749290893898432865}
+  - component: {fileID: 5044242467341433224}
   m_Layer: 8
   m_Name: Bat (Enemy)
   m_TagString: Enemy
@@ -158,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff7123e9c4fbd74fa153d28cbae38fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
 --- !u!114 &528813010506952094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,4 +173,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857c58a513eb35d4b984f2fc5a42b9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 11400000, guid: 5005992642f2d7342ab9c527d975c6fe, type: 2}
+--- !u!114 &-5749290893898432865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866667092325961019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b1a96f006b4f418b442143ac18bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
+  health: 10
+--- !u!114 &5044242467341433224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866667092325961019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7f6fb6478b9b040b264a1eb65372fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10

@@ -15,9 +15,14 @@ public class Enemy : MonoBehaviour
     }        
 
     private void Update()
-    {
-        isPlayerState = player.transform.position.x > transform.position.x;
-
+    {   
+        if (player == null)
+        {
+            return;
+        }
+        
+        isPlayerState = player.transform.position.x > transform.position.x;                
+                        
         MoveEnemy(isPlayerState);
         FlipEnemyFacing();
         PlayerTracking();        
