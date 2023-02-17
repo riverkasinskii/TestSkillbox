@@ -13,10 +13,12 @@ public class Shooter : MonoBehaviour
         
     private Coroutine firingCoroutine;
     private Player player;
+    private AudioPlayer audioPlayer;
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();        
+        player = FindObjectOfType<Player>();   
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
         
     private void Update()
@@ -35,8 +37,11 @@ public class Shooter : MonoBehaviour
         {
             StopCoroutine(firingCoroutine);
             firingCoroutine = null;
-        }
-        
+        }        
+    }
+    private void GetVectorFiring()
+    {
+        xSpeed = player.transform.localScale.x * projectileSpeed;
     }
 
     private IEnumerator FireContinuously()
@@ -54,15 +59,11 @@ public class Shooter : MonoBehaviour
                 rigidbody2D.velocity = new Vector2(xSpeed, 0f);                                                                                     
             }
 
+            audioPlayer.PlayShootingClip();
+
             Destroy(instance, projectileLifeTime);
 
             yield return new WaitForSeconds(firingRate);
         }
-    }
-    
-    private void GetVectorFiring()
-    {
-        xSpeed = player.transform.localScale.x * projectileSpeed;
-    }
-        
+    }       
 }

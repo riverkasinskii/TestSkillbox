@@ -5,7 +5,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float moveSpeed = 1f;
     private GameObject player;
     private new Rigidbody2D rigidbody2D;
-
     private bool isPlayerState;
 
     private void Start()
@@ -50,7 +49,5 @@ public class Enemy : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position,
                                                  player.transform.position,
                                                  moveSpeed * Time.deltaTime);
-    }
-        
-    
+    }   
 }

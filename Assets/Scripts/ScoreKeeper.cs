@@ -7,7 +7,6 @@ public class ScoreKeeper : MonoBehaviour
 
     private LevelManager levelManager;
 
-
     private void Awake()
     {
         levelManager = FindObjectOfType<LevelManager>();
@@ -24,7 +23,7 @@ public class ScoreKeeper : MonoBehaviour
 
         if (score >= levelExperience)
         {
-            levelManager.LoadLevel(1);
+            levelManager.LoadLevel();
         }
     }
 
@@ -37,6 +36,4 @@ public class ScoreKeeper : MonoBehaviour
     {
         return levelExperience;
     }
-
-
 }    

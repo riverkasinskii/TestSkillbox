@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dff55583c6abdc4c868676484f006be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelExperience: 5000
+  levelExperience: 1000

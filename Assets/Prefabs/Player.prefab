@@ -161,8 +161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
-  bullet: {fileID: 7683816425098285477, guid: 534279f1579ef2e47b09d52eed707da0, type: 3}
-  gun: {fileID: 0}
 --- !u!114 &6628915274231749134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8674852254634366734, guid: cb20eecb948492d428a3b9a4589b2b3c, type: 3}
-  projectileSpeed: 10
-  projectileLifeTime: 5
+  projectileSpeed: 30
+  projectileLifeTime: 2
   firingRate: 0.2
   isFiring: 0

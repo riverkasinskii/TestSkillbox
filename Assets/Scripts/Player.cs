@@ -3,10 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float runSpeed = 10f;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Transform gun;
-
+    [SerializeField] private float runSpeed = 10f;    
+    
     private Vector2 moveInput;
 
     private new Rigidbody2D rigidbody2D;    

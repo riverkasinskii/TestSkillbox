@@ -29,6 +29,6 @@ public class UIDisplay : MonoBehaviour
     {
         healthSlider.value = playerHealth.GetHealth();
         experienceSlider.value = scoreKeeper.GetScore();
-        scoreText.text = scoreKeeper.GetScore().ToString("000000000000000000");
+        scoreText.text = scoreKeeper.GetScore().ToString("000000000000");
     }
 }
